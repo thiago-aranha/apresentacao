@@ -1,2 +1,2 @@
-# portfolio
-Site para apresentação do currículo
+# Portfolio
+Site em HTML e CSS para apresentação do currículo
