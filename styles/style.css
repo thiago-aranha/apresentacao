@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 * {
     margin: 0;
@@ -23,30 +22,30 @@ body{
 }
 
     .cabecalho {
-        padding: 1% 0 0 10%
+        padding: 1% 0% 0% 10%
     }
 
         .cabecalho__menu {
             display: flex;
             justify-content: left;
             align-items: center;
-            gap: 80px;
+            gap: 5rem;
         }
 
             .cabecalho__menu__item {
                 font-family: var(--fonte-secundaria);
-                font-size: 24px;
+                font-size: 1.5rem;
                 font-weight: bold;
                 color: var(--cor-terciaria);
                 text-decoration: none;
-                padding: 10px 15px;
+                padding: 0.625rem 1rem;
                 text-decoration: none;
             }
 
             .cabecalho__menu__item:hover {
                 color: var(--cor-secundaria);
                 background-color: var(--cor-hover);
-                border-radius: 8px;
+                border-radius: 0.5rem;
             }
 
     .apresentacao{
@@ -58,14 +57,14 @@ body{
     }
 
         .apresentacao__conteudo {
-            width: 615px;
+            width: 50%;
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 1.25rem;
         }
 
             .apresentacao__conteudo__titulo {
-                font-size: 36px;
+                font-size: 2.25rem;
                 font-family: var(--fonte-primaria);
             }
 
@@ -74,22 +73,59 @@ body{
                 }
 
             .apresentacao__conteudo__texto {
-                font-size: 24px;
+                font-size: 1.5rem;
                 font-family: var(--fonte-secundaria);
-                line-height: 150%;
             }
 
                 .apresentacao__conteudo__texto__paragrafo {
                     margin-top: 3%;
                 }
 
+            .apresentacao__conteudo__links {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                gap: 2rem;
+            }
+
+                .apresentacao__conteudo__links__subtitulo{
+                    font-family: var(--fonte-primaria);
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                }
+
+                .apresentacao__conteudo__links__link{
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    gap: 1rem;
+                    border: 0.125rem;
+                    border-style: solid;
+                    border-color: var(--cor-terciaria);
+                    width: 60%;
+                    border-radius: 0.5rem;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    padding: 1.25rem 0;
+                    text-decoration: none;
+                    color: var(--cor-secundaria);
+                    font-family: var(--fonte-secundaria)
+                }
+
+                .apresentacao__conteudo__links__link:hover {
+                    background-color: var(--cor-hover);
+                }
+
         .apresentacao__imagem {
             display: flex;
             justify-content:end;
-            border-radius: 2000px;
+            border-radius: 125rem;
             border-color: var(--cor-terciaria);
-            border-style:solid;
-            border-width: 7px;
+            border-style: solid;
+            border-width: 0.5rem;
+            width: 40%;
+            height: 40%;
         }
 
     .rodape {
@@ -97,7 +133,32 @@ body{
         background-color: var(--cor-terciaria);
         text-align: center;
         font-family: 'Montserrat', sans-serif;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 400;
-        padding: 8px;
+        padding: 0.5rem;
     }
+
+/*Layout mobile*/
+
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        padding: 1% 0% 4% 0%; 
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+        padding: 0% 0%;
+    }
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+        gap: 50px;
+        padding: 1% 0% 4% 0%;
+    }
+
+    .apresentacao__conteudo {
+        width: 90%;
+    }
+
+}
