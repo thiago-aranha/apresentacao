@@ -23,6 +23,7 @@ body{
     box-sizing: border-box;
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    background-image: url('../img/fundo-futurista-abstrato-com-design-3d.jpg')
 }
 
     .header {
@@ -127,8 +128,8 @@ body{
                     background-color: var(--hover-color);
                 }
 
-        .presentation__image {
-            display: flex;
+        .presentation__bordered__image {
+            /* display: flex;
             justify-content:end;
             border-radius: 125rem;
             border-color: var(--tertiary-color);
@@ -136,6 +137,13 @@ body{
             border-width: calc(var(--size-multiplier) * 0.5rem);
             width: calc(var(--size-multiplier) * 30%);
             height: calc(var(--size-multiplier) * 30%);
+            position: relative; */
+            position:relative;
+            display: inline-block;
+        }
+
+        .presentation__bordered__image img {
+            box-shadow: 0.4rem -0.4rem 0 0 var(--tertiary-color);
         }
 
     .footer {
